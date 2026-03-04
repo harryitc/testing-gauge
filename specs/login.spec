@@ -7,7 +7,7 @@ Tags: smoke, login, positive
 
 * Mở trang SauceDemo
 * Nhập username "adminpro"
-* Nhập password "secret_sauce"
+* Nhập password "sushi_sauce"
 * Click nút Login
 * Xác nhận đang ở trang sản phẩm
 * Xác nhận tiêu đề trang là "Products"
