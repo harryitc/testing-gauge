@@ -6,7 +6,7 @@ Kiểm thử tính năng đăng nhập trên trang https://www.saucedemo.com
 Tags: smoke, login, positive
 
 * Mở trang SauceDemo
-* Nhập username "adminprocuongtest"
+* Nhập username "service-adminpro"
 * Nhập password "sushi_sauce"
 * Click nút Login
 * Xác nhận đang ở trang sản phẩm
