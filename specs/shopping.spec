@@ -5,7 +5,7 @@ Kiểm thử luồng mua hàng hoàn chỉnh trên SauceDemo
 Tags: shopping
 
 Đăng nhập trước mỗi scenario
-* Đăng nhập SauceDemo với "standard_user" và "secret_sauce"
+* Đăng nhập SauceDemo với "standard_user" và "khangdeptrai"
 
 ## Thêm sản phẩm vào giỏ hàng
 Tags: smoke, cart
