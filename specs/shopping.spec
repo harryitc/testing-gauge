@@ -5,7 +5,7 @@ Kiểm thử luồng mua hàng hoàn chỉnh trên SauceDemo
 Tags: shopping
 
 Đăng nhập trước mỗi scenario
-* Đăng nhập SauceDemo với "standard_user" và "khangdeptrai"
+* Đăng nhập SauceDemo với "standard_user" và "secret_sauce"
 
 ## Thêm sản phẩm vào giỏ hàng
 Tags: smoke, cart
@@ -29,7 +29,7 @@ Tags: smoke, checkout
 * Thêm sản phẩm "Sauce Labs Backpack" vào giỏ
 * Mở giỏ hàng
 * Click nút Checkout
-* Nhập thông tin giao hàng với tên "Harry" họ "Phan" và zip "70000"
+* Nhập thông tin giao hàng với tên "Harry" họ "Nguyen" và zip "70000"
 * Click nút Continue
 * Xác nhận trang tổng kết đơn hàng hiển thị
 * Click nút Finish
