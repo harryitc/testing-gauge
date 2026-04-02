@@ -1,0 +1,12 @@
+# Đăng nhập CakeShop với email <email> và mật khẩu <password>
+* Mở trang CakeShop tại "/login"
+* Nhập email <email>
+* Nhập mật khẩu <password>
+* Click nút Đăng Nhập
+* Xác nhận đăng nhập thành công và chuyển đến trang cakes
+
+# Chuẩn bị giỏ hàng CakeShop có sản phẩm
+* Mở trang CakeShop tại "/cakes"
+* Chờ trang danh mục bánh tải xong
+* Thêm bánh đầu tiên vào giỏ từ danh sách
+* Chờ "2" giây
