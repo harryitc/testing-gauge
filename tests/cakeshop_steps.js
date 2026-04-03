@@ -987,7 +987,7 @@ step("Xác nhận mã giảm giá được áp dụng hoặc báo lỗi", async 
         return (
             body.includes("Giảm giá") ||
             body.includes("Gỡ bỏ") ||
-            document.querySelectorAll(".ant-message-notice-content").length > 0
+            document.querySelectorAll("div.ant-message-notice-content, .ant-message-notice-content").length > 0
         );
     });
     assert.ok(hasResponse, "Không nhận được phản hồi khi áp dụng mã giảm giá");
@@ -999,7 +999,7 @@ step("Xác nhận hiển thị toast lỗi mã giảm giá", async () => {
         try {
             const hasError = await evaluate(() => {
                 const msgs = document.querySelectorAll(
-                    ".ant-message-error, .ant-message-custom-content"
+                    "div.ant-message-error, .ant-message-error, div.ant-message-custom-content, .ant-message-custom-content"
                 );
                 return msgs.length > 0;
             });

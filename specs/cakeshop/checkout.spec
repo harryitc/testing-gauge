@@ -31,7 +31,7 @@ Tags: checkout, coupon
 * Chuẩn bị giỏ hàng CakeShop có sản phẩm
 * Mở trang CakeShop tại "/checkout"
 * Chờ trang checkout tải xong
-* Nhập mã giảm giá "WELCOME10"
+* Nhập mã giảm giá "CATSPECIAL7WG6"
 * Click áp dụng mã giảm giá
 * Chờ "2" giây
 * Xác nhận mã giảm giá được áp dụng hoặc báo lỗi
@@ -92,7 +92,7 @@ Tags: checkout, coupon
 * Chuẩn bị giỏ hàng CakeShop có sản phẩm
 * Mở trang CakeShop tại "/checkout"
 * Chờ trang checkout tải xong
-* Nhập mã giảm giá "WELCOME10"
+* Nhập mã giảm giá "CATSPECIAL7WG6"
 * Click áp dụng mã giảm giá
 * Chờ "2" giây
 * Click gỡ bỏ mã giảm giá
