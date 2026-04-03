@@ -81,26 +81,23 @@ async function getTextContent(selector) {
 
 // Kiểm tra toast message (Ant Design message component)
 async function waitForToast(partialText, timeoutMs = 10000) {
-    const start = Date.now();
-    while (Date.now() - start < timeoutMs) {
-        try {
-            const found = await evaluate(
-                (txt) => {
-                    const messages = document.querySelectorAll(
-                        ".ant-message-notice-content, .ant-message .ant-message-custom-content"
-                    );
-                    for (const msg of messages) {
-                        if (msg.textContent.includes(txt)) return true;
-                    }
-                    return false;
-                },
-                { args: [partialText] }
+    return await evaluate(
+        (txt) => {
+            const messages = document.querySelectorAll(
+                "div.ant-message-notice-content, .ant-message-custom-content"
             );
-            if (found) return true;
-        } catch (e) { /* retry */ }
-        await waitFor(500);
-    }
-    throw new Error(`Toast chứa "${partialText}" không xuất hiện sau ${timeoutMs}ms`);
+
+            // TODO: bug?
+            console.log(JSON.stringify(messages));
+
+            for (const msg of messages) {
+                if (msg.textContent.includes(txt)) return true;
+            }
+            return false;
+        },
+        { args: [partialText] }
+    );
+
 }
 
 // Kiểm tra lỗi validation (Ant Design Form.Item)
@@ -108,8 +105,12 @@ async function findValidationError(errorMessage) {
     return await evaluate(
         (msg) => {
             const errors = document.querySelectorAll(
-                ".ant-form-item-explain-error, .ant-form-item-explain .ant-form-item-explain-error"
+                "div.ant-form-item-explain-error, .ant-form-item-explain-error"
             );
+
+            // TODO: bug?
+            console.log(JSON.stringify(errors));
+
             for (const el of errors) {
                 if (el.textContent.includes(msg)) return true;
             }
